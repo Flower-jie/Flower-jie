@@ -6,6 +6,8 @@
 
 [访问项目首页](https://flower-jie.github.io/portfolio/) · [GitHub](https://github.com/Flower-jie) · [Gitee](https://gitee.com/Sunflower-hua)
 
+网站源码同样开源：[GitHub](https://github.com/Flower-jie/portfolio) · [Gitee](https://gitee.com/Sunflower-hua/portfolio)
+
 ## 按方向发现项目
 
 | 方向 | 项目 | 主要内容 | 源码 |
