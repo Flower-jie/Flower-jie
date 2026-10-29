@@ -14,8 +14,8 @@
 | --- | --- | --- | --- |
 | AI 与知识库 | **知行 LearnHub AI** | 独立学习助手；资料导入、分块索引、可选 RAG、来源引用、会话与笔记 | [GitHub](https://github.com/Flower-jie/learnhub-ai) · [Gitee](https://gitee.com/Sunflower-hua/learnhub-ai) |
 | 在线教育 · AI | **天机学堂 AI** | 课程、交易、学习进度与 Spring AI 流式聊天的微服务实践 | [GitHub](https://github.com/Flower-jie/tjxt-ai) · [Gitee](https://gitee.com/Sunflower-hua/tjxt-ai-public) |
-| 本地生活 | **黑马点评** | 登录会话、商铺缓存、社交互动与 Redis 优惠券秒杀 | [GitHub](https://github.com/Flower-jie/dark-horse-review) · [Gitee](https://gitee.com/Sunflower-hua/dark-horse-review-public) |
-| 电商与外卖 | **苍穹外卖** | 菜品、购物车、订单、支付退款与营业状态管理 | [GitHub](https://github.com/Flower-jie/sky-take-out) · [Gitee](https://gitee.com/Sunflower-hua/sky-take-out-public) |
+| 本地生活 · AI | **黑马点评** | 登录会话、商铺缓存、社交互动与 Redis 优惠券秒杀；新增 Java 知识库助手 | [GitHub](https://github.com/Flower-jie/dark-horse-review) · [Gitee](https://gitee.com/Sunflower-hua/dark-horse-review-public) |
+| 电商与外卖 · AI | **苍穹外卖** | 菜品、购物车、订单、支付退款与营业状态管理；新增 Java 知识库助手 | [GitHub](https://github.com/Flower-jie/sky-take-out) · [Gitee](https://gitee.com/Sunflower-hua/sky-take-out-public) |
 | 开发者工具 | **个人项目首页** | 响应式作品集；项目搜索、分类筛选与数据驱动的项目卡片 | [GitHub](https://github.com/Flower-jie/portfolio) · [Gitee](https://gitee.com/Sunflower-hua/portfolio) |
 
 ## 正在实践的技术
@@ -27,6 +27,8 @@
 **导入资料 → 文本分块 → 建立索引 → 检索证据 → 可选模型生成 → 来源引用 → 学习笔记**
 
 知行默认使用无需 API 的本地词项哈希检索，**不将其冒充语义向量或模型回答**。配置后端 OpenAI 兼容服务后，可以启用语义向量与生成式问答；密钥不进入网页或代码。没有足够证据时，不编造答案。
+
+黑马点评与苍穹外卖也各自内置了独立的 Java 知识库助手，入口为 `/ai/`：使用 `X-AI-Token` 访问控制，资料导入后切分索引，回答展示来源引用；未配置兼容模型时只返回检索片段。两套实现均为 Java 8，不依赖 Spring AI。
 
 ## 项目说明
 
